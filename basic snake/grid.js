@@ -9,7 +9,14 @@ export function randomGridPosition(){
 
 export function outsideGrid(position){
     return (
-        position.x < 1 || position.x > GRID_SIZE ||
-        position.y < 1 || position.y > GRID_SIZE
+        position.x > GRID_SIZE ||
+        position.y > GRID_SIZE
+    )
+}
+
+export function touchedGrid(position){
+    return (
+        position.x < 1 ||
+        position.y < 1
     )
 }
