@@ -1,13 +1,11 @@
-import {update as updateSnake, draw as drawSnake, SNAKE_SPEED, getSnakeHead, snakeIntersection} from './snake.js'
-import {update as updateFood, draw as drawFood} from './food.js'
-import {outsideGrid, touchedGrid} from './grid.js'
+import {update as updateSnake, draw as drawSnake, SNAKE_SPEED, getSnakeHead, snakeIntersection, snakeBody} from './snake.js'
+import {update as updateFood, draw as drawFood, pont} from './food.js'
+import {outsideGrid, touchedGrid, GRID_SIZE} from './grid.js'
 
 
 let gameOverFut = false
 let gameOverNyak = false
-
-let ido = 0
-let time = document.getElementById('eltelt-ido')
+let score = document.getElementById('score')
 
 let lastRenderTime = 0
 const gameBoard = document.getElementById('game-board')
@@ -42,8 +40,9 @@ window.requestAnimationFrame(main)
 function update(){
     updateSnake()
     updateFood()
+    checkWin()
     checkDeath()
-    checkIdo()
+    checkScore()
 }
 
 function draw(){
@@ -57,7 +56,12 @@ function checkDeath(){
     gameOverNyak = touchedGrid(getSnakeHead()) || snakeIntersection()
 }
 
-function checkIdo(){
-    time.innerHTML = ido
-    ido++
+function checkScore(){
+    score.innerHTML = pont
+}
+
+function checkWin(){
+    if (Object.keys(snakeBody) == Math.pow(2, GRID_SIZE)){
+        score.innerHTML = "Nagyon nagy a kukacod!"
+    }
 }
