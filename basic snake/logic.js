@@ -40,7 +40,6 @@ window.requestAnimationFrame(main)
 function update(){
     updateSnake()
     updateFood()
-    checkWin()
     checkDeath()
     checkScore()
 }
@@ -57,11 +56,11 @@ function checkDeath(){
 }
 
 function checkScore(){
-    score.innerHTML = pont
-}
-
-function checkWin(){
-    if (Object.keys(snakeBody) == Math.pow(2, GRID_SIZE)){
-        score.innerHTML = "Nagyon nagy a kukacod!"
+    if(pont >= GRID_SIZE**2 - 1){
+        score.innrHTML = "Hatalmas kukacod van!"
+    } else{
+        score.innerHTML = pont
     }
+    
+
 }
