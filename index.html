@@ -8,15 +8,24 @@
     <title>Main</title>
 </head>
 <body>
-    <header>
-        <img src="brani.png" id="goofyah">
-        <h1>Benkó Barnabás iskolai weboldala</h1>
-    </header>
-    <h2>Játékprojektek</h2>
-    <button onclick = "reDirect()">Kukacos Játék</button>
+    <img src="brani.png" id="goofyah">
+    <h1><strong>Benkó Barnabás</strong><br>iskolai weboldala</h1>
+    <div class = "stuff">
+        <div class = "projects">
+            <h2>Játékprojektek</h2>
+            <button id = "game1" onclick = "Kukac()">Kukacos Játék</button>
+        </div>
+        <div class = "projects">
+            <h2>Nem-játék projektek</h2>
+            <button id = "project1" onclick = "Háromszög()">Háromszög<br>generátor</button>    
+        </div>
+    </div>
     <script>
-        function reDirect(){
-            window.location = './basic snake/snake.html'
+        function Kukac(){
+            window.location = './basic snake/kukac.html'
+        }
+        function Háromszög(){
+            window.location = './triangle/haromszog.html'
         }
     </script>
 </body>

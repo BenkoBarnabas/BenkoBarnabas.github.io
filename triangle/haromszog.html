@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>△ generator ÉÁ</title>
+
+    <style>
+
+        body {
+            background: url("bc.png");
+            font-family: "Comic Sans MS", "Comic Sans", cursive;
+            color: #261442;
+        }
+
+        #main {
+            width: 100%;
+        }
+
+        #ad1 {
+            width: 20%;
+            float: right;
+            text-align: right;
+            
+        }
+        #ad2 {
+            width: 20%;
+            float: left;
+        }
+        #generator {
+            background: rgb(250, 245, 192);
+            width: 55%;
+            float: right;
+            text-align: center;
+            border: 10px rgb(29, 13, 117)  dashed;
+        }
+
+        table {
+            text-align: left;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 50px; margin-bottom: 50px;
+            
+        }
+        tr {
+            width: max-content;
+        }
+
+        .tdvonal {
+            border-right: 2px solid black;
+        }
+
+        td {
+            padding-right: 10px; padding-left: 10px;
+        }
+
+        canvas {
+            margin-bottom: 50px;
+        }
+        img {
+            border: 5px rgb(25, 82, 156)  double;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="ad1">
+            <a href="https://kfc.hu/menu/17303451?utm_source=google&utm_medium=cpm&utm_campaign=Delivery%20Display&utm_term9587_004%20ENGAGED%20Display%20RON=&utm_content=623204276780&device=c&placement=smallbiztrends.com&location=9063072&gclid=EAIaIQobChMI2-DW3vvI-gIVgbYYCh0d5QVQEAEYASAAEgIJ7PD_BwE">
+            <img src="ad1.png">
+            </a>
+        </div>
+        
+        <div id="generator">
+            <h1>háromszög <span style="color: #cc2929; font-size: larger;">GENERÁTOR</span> éáááá (bUGoZs :(🤪)</h1>
+        
+            <div id="ter">
+                <div id="szamolas">
+                    <p>a oldal:</p>
+                    <input id="a" class="oldal" type="number"><br>
+                    <p>b oldal:</p>
+                    <input id="b" class="oldal" type="number"><br>
+                    <p>c oldal:</p>
+                    <input id="c" class="oldal" type="number"><br>
+                    <p>alpha szög:</p>
+                    <input id="alpha" class="szog" type="number"><br>
+                    <p>beta szög:</p>
+                    <input id="beta" class="szog" type="number"><br>
+                    <p>gamma szög:</p>
+                    <input id="gamma" class="szog" type="number">
+                    <button onclick="Main()">Számol!</button>
+                    <table>
+                        <tr>
+                            <td id="o1" class="tdvonal"></td>
+                            <td id="sz1"></td>
+                        </tr>
+                        <tr>
+                            <td id="o2" class="tdvonal"></td>
+                            <td id="sz2"></td>
+                        </tr>
+                        <tr>
+                            <td id="o3" class="tdvonal"></td>
+                            <td id="sz3"></td>
+                        </tr>
+                    </table>
+                    <h2 id="Naan"></h2>
+
+                </div>
+                
+                <canvas id="canvas" height="500" width="500">
+                </canvas>
+            </div>
+        </div>
+
+        <div id="ad2">
+            <a href="https://www.zendate.com/?afid=1910210922&subafid=adid_|kwd_|net_x|pos_|geo_9063072|type_&gclid=EAIaIQobChMIgKeXyP3I-gIVBcl3Ch01KACpEAAYAiAAEgJ5KvD_BwE">
+            <img src="ad2.png">
+            </a>
+        </div>
+    </div>
+    
+
+   
+    <script src="triangle.js"></script>
+    
+</body>
+</html>
