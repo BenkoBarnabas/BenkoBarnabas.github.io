@@ -5,6 +5,7 @@
     float: left;
     padding-left:2vw;
     padding-right:2vw;
+    margin-bottom: 10vh;
 }
 
 .stuff:hover{
@@ -71,6 +72,7 @@ h2{
     background:linear-gradient(45deg, rgb(68, 68, 68), rgb(0, 0, 0));
     background-clip: text;
     color:transparent;
+    font-size:3vmin;
 }
 
 body{
@@ -80,7 +82,7 @@ body{
 #goofyah{
     float:right;
     aspect-ratio: 1 / 0.9;
-    width:50vw;
+    width:45vw;
 }
 
 
@@ -90,7 +92,7 @@ body{
     border: 0.8vmin double black ;
     background-color:rgba(220, 255, 255, 0.664);
     float: left;
-    width: 40%;
+    width: 41%;
     margin-top: 5%;
     margin-left: 5%;
     box-shadow: 1vw 1vh #111111;
