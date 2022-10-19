@@ -62,17 +62,15 @@ h1{
     font-size: 6vmin;
     padding-bottom:20vh;
     text-align:center;
-    background:linear-gradient(45deg, rgb(66, 45, 255), rgb(61, 0, 0));
-    background-clip: text;
-    color:transparent;
+    color:#a6ff00;
+    text-shadow:0.2vw 0.2vh #111111;
 }
 
 h2{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background:linear-gradient(45deg, rgb(68, 68, 68), rgb(0, 0, 0));
-    background-clip: text;
-    color:transparent;
+    color:#a6ff00;
     font-size:3vmin;
+    text-shadow:0.1vw 0.1vh #111111;
 }
 
 body{
