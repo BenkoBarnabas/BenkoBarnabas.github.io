@@ -1,3 +1,22 @@
+#allstuff{
+    display:flex;
+}
+
+#stuff{
+    transition: width 0.4s height 0.3;
+    text-align:center;
+    border: 0.8vmin double black ;
+    background-color:rgba(220, 255, 255, 0.664);
+    float: left;
+    width: 40%;
+    margin-top: 5vh;
+    margin-left: 5vw;
+    box-shadow: 1vw 1vh #111111;
+    scale:0.9;
+    transition: scale 0.3s;
+    border-radius: 4vmin;
+}
+
 .projects{
     width:15vw;
     height:30vh;
@@ -8,25 +27,25 @@
     margin-bottom: 10vh;
 }
 
-.stuff:hover{
+#stuff:hover{
     scale:1;
 }
-.stuff:hover #project1{
+#stuff:hover #project1{
     scale: 0.8;
     opacity: 0.8;
 }
 
-.stuff:hover #project1:hover{
+#stuff:hover #project1:hover{
     scale: 1;
     opacity: 1;
 }
 
-.stuff:hover #game1{
+#stuff:hover #game1{
     scale: 0.8;
     opacity: 0.8;
 }
 
-.stuff:hover #game1:hover{
+#stuff:hover #game1:hover{
     scale: 1;
     opacity: 1;
 }
@@ -81,26 +100,11 @@ body{
     aspect-ratio: 1 / 0.9;
     width:40vw;
     margin-top: 5vh;
+    float:right;
 }
 
-
-#stuff{
-    transition: width 0.4s height 0.3;
-    text-align:center;
-    border: 0.8vmin double black ;
-    background-color:rgba(220, 255, 255, 0.664);
-    float: left;
-    width: 40%;
-    margin-top: 5vh;
-    margin-left: 5vw;
-    box-shadow: 1vw 1vh #111111;
-    scale:0.9;
-    transition: scale 0.3s;
-    border-radius: 4vmin;
-}
-
-#allstuff{
-    display:flex;
+#goofyah:hover{
+    scale: 1.1;
 }
 
 #kep{
