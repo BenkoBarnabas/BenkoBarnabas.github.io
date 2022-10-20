@@ -38,6 +38,7 @@
 #stuff:hover #project1:hover{
     scale: 1;
     opacity: 1;
+    cursor:pointer;
 }
 
 #stuff:hover #game1{
@@ -48,6 +49,7 @@
 #stuff:hover #game1:hover{
     scale: 1;
     opacity: 1;
+    cursor:pointer;
 }
 
 #game1{
@@ -94,6 +96,7 @@ h2{
 
 body{
     background-color: rgb(36, 36, 36);
+    cursor:default;
 }
 
 #goofyah{
